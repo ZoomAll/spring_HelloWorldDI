@@ -1,6 +1,6 @@
 package my.spring;
 
-public interface MRender
+public interface MRenderer
 {
     void render();
 

@@ -8,7 +8,7 @@ public class HelloWorldSpringDI
     public static void main(String[] args)
     {
         ApplicationContext ctx = new ClassPathXmlApplicationContext("META-INF/spring/app-context.xml");
-        MRender bean = ctx.getBean(MRender.class);
+        MRenderer bean = ctx.getBean(MRenderer.class);
         bean.render();
     }
 }

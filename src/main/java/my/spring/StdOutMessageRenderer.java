@@ -2,7 +2,7 @@ package my.spring;
 
 import java.util.Objects;
 
-public class StdOutMessageRender implements MRender
+public class StdOutMessageRenderer implements MRenderer
 {
     private MProvider provider;
 
