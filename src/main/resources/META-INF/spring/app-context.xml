@@ -7,6 +7,9 @@
             http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="provider" class="my.spring.HelloWorldMessageProvider"/>
-    <bean id="renderer" class="my.spring.StdOutMessageRenderer" p:provider-ref="provider"/>
+    <!--<bean id="renderer" class="my.spring.StdOutMessageRenderer" p:provider-ref="provider"/>-->
+    <bean id="renderer" class="my.spring.StdOutMessageRenderer">
+        <property name="provider" ref="provider"/>
+    </bean>
 
 </beans>
